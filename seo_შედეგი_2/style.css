@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #263238;
+  background: #fafafa;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: #245b83;
+}
+
+button {
+  padding: 10px 16px;
+  border: 1px solid #245b83;
+  border-radius: 4px;
+  color: white;
+  background: #245b83;
+  font: inherit;
+  cursor: pointer;
+}
+
+.page {
+  width: calc(100% - 32px);
+  max-width: 800px;
+  margin: 32px auto;
+}
+
+.site-name {
+  font-weight: 700;
+}
+
+.booking {
+  margin: 24px 0;
+  padding: 24px;
+  border: 1px solid #d9dfe3;
+  border-radius: 4px;
+  background: white;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.secondary {
+  color: #245b83;
+  background: white;
+}
+
+.ticket-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ticket-option {
+  flex: 1 1 180px;
+  padding: 16px;
+  border: 1px solid #d9dfe3;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.ticket-option h3 {
+  margin: 0;
+}
+
+.ticket-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.ticket-list li {
+  padding: 8px 12px;
+  border: 1px dashed #245b83;
+  border-radius: 4px;
+  background: #edf5fa;
+}
+
+.practice-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

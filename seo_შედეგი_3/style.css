@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #263238;
+  background: #fafafa;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+.site-header,
+.page {
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 24px;
+}
+
+.site-header,
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+a {
+  color: #245b83;
+}
+
+.brand {
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.intro {
+  padding-block: 32px;
+}
+
+.lesson-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.lesson-card {
+  flex: 1 1 300px;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid #d9dfe3;
+  border-radius: 4px;
+  background: white;
+}
+/* ბარათის ტექსტი ბოლომდე უნდა ჩანდეს. */
+.lesson-card p {
+  height: auto;
+  overflow: visible;
+}
+
+.details {
+  margin-top: 32px;
+}
+
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  background: #245b83;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+  .site-header,
+  .page {
+    padding: 16px;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .intro {
+    padding-block: 20px;
+  }
+
+  .intro h1 {
+    font-size: 26px;
+  }
+
+  .lesson-list {
+    flex-direction: column;
+  }
+
+  .lesson-card {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+}

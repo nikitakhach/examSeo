@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="HTML-ის, CSS-ისა და JavaScript-ის ღია გაკვეთილები დამწყებთათვის."
+    />
+    <title>ღია გაკვეთილები | სასწავლო ცენტრი</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">სასწავლო ცენტრი</a>
+      <nav aria-label="მთავარი მენიუ">
+        <a href="#lessons">ღია გაკვეთილები</a>
+        <a href="#details">შეხვედრის დეტალები</a>
+      </nav>
+    </header>
+
+    <main id="home" class="page">
+      <section class="intro">
+        <h1>ღია გაკვეთილები დამწყებთათვის</h1>
+        <p>
+          გაკვეთილებზე გაეცნობი ვებგვერდის აწყობის საფუძვლებს და შეასრულებ მცირე პრაქტიკულ
+          დავალებებს.
+        </p>
+      </section>
+
+      <section id="lessons" aria-labelledby="lessons-title">
+        <h2 id="lessons-title">რას ვისწავლით</h2>
+        <div class="lesson-list">
+          <article class="lesson-card">
+            <h3>HTML გვერდის სტრუქტურა</h3>
+            <p>
+              ვისწავლით სათაურების, აბზაცებისა და ბმულების დამატებას. გაკვეთილის ბოლოს ამ
+              ელემენტებით მარტივ გვერდს ავაწყობთ.
+            </p>
+          </article>
+          <article class="lesson-card">
+            <h3>CSS გვერდის გაფორმება</h3>
+            <p>
+              შევცვლით ტექსტის ფერსა და ზომას, ელემენტებს შორის დაშორებას. შემდეგ გვერდს ტელეფონის
+              ეკრანსაც მოვარგებთ.
+            </p>
+          </article>
+          <article class="lesson-card">
+            <h3>JavaScript ღილაკები</h3>
+            <p>
+              გვერდს ღილაკს დავუმატებთ და დაჭერისას დამატებით ტექსტს გამოვაჩენთ. განმეორებით
+              დაჭერისას ტექსტი დაიმალება.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="details" class="details" aria-labelledby="details-title">
+        <h2 id="details-title">შეხვედრის დეტალები</h2>
+        <button
+          id="details-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="meeting-info"
+        >
+          დეტალების ნახვა
+        </button>
+        <div id="meeting-info" hidden>
+          <p>შეხვედრა უფასოა და 45 წუთს გრძელდება.</p>
+          <p>გაკვეთილზე დასწრება წინასწარ ცოდნას არ მოითხოვს.</p>
+        </div>
+        <noscript
+          ><p>შეხვედრა უფასოა, გრძელდება 45 წუთი და წინასწარ ცოდნას არ მოითხოვს.</p></noscript
+        >
+      </section>
+    </main>
+
+    <footer class="page">სასწავლო ცენტრი · ღია გაკვეთილები</footer>
+  </body>
+</html>
